@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //https://github.com/STCCENTRE/Orange230
-//token of repository
-//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
+//token of orange230
+//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
 public class Login {
 
 	public static void main(String[] args) {
@@ -25,5 +25,13 @@ public class Login {
 		driver.findElement(By.name("middleName")).sendKeys("S");
 		driver.findElement(By.name("lastName")).sendKeys("S");
 		driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]")).click();
+		//driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[1]/div/div[2]/input")).sendKeys("ABC1234556");
+		//driver.findElement(By.cssSelector("div.oxd-form-row:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > i:nth-child(2)")).click();
+		//driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[2]/div/div[2]/div")).click();
+		//driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/i")).click();
+		//driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[2]/div/label/span")).click();
+		//driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[2]/div/div[2]/div/div/div[2]/i")).click();
+		driver.findElement(By.linkText("Save")).click();
 	}
 }
+
