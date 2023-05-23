@@ -25,6 +25,8 @@ public class Login {
 		driver.findElement(By.name("middleName")).sendKeys("K");
 		driver.findElement(By.name("lastName")).sendKeys("Nair");
 		driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]")).click();
+		driver.findElement(By.name("Personal Details")).click();
+		
 	}
 
 }
